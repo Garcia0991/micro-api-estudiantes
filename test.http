@@ -1,0 +1,8 @@
+POST http://localhost:3000/estudiantes
+Content-Type: application/json
+
+{
+  "id": "000156364",
+  "nombre": "Cristiano Ronaldo",
+  "carrera": "Ingeniería de Sistemas e Informatica"
+}
