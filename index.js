@@ -4,10 +4,9 @@ const PORT = 3000;
 
 app.use(express.json());
 
-// Memoria en RAM
 let estudiantes = [];
 
-// Registrar estudiante
+
 app.post('/estudiantes', (req, res) => {
   const { id, nombre, carrera } = req.body;
 
@@ -24,7 +23,6 @@ app.post('/estudiantes', (req, res) => {
   res.status(201).json({ mensaje: 'Estudiante registrado' });
 });
 
-// Listar estudiantes
 app.get('/estudiantes', (req, res) => {
   res.status(200).json(estudiantes);
 });
